@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "humanizer-zh",
+  "version": "1.0.0",
+  "description": "讲人话：沿用 humanizer-zh 原文，润色中文文章、评论和文档，保留事实、确定程度与作者声音。",
+  "author": {
+    "name": "neilforest7",
+    "url": "https://github.com/neilforest7"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/neilforest7/humanizer-zh-plugin",
+  "repository": "https://github.com/neilforest7/humanizer-zh-plugin",
+  "keywords": ["讲人话", "humanizer-zh", "中文润色", "写作"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "讲人话",
+        "shortDescription": "润色中文，保留原意与作者声音",
+        "longDescription": "讲人话将 humanizer-zh 原技能完整打包为插件，用于润色已有中文文章、评论和文档。它处理空话、重复和模板化表达，保留事实、限定、归因、文体与作者声音。粘贴文本时默认交付最终改写稿；文件只有在用户要求修改时才写回，并保护代码、链接、数据和标题结构。支持借鉴用户提供的作者样本。已经通顺的文字可以原样保留。不能判断作者身份，也不保证通过 AI 检测器。插件免费，无购买功能。",
+        "developerName": "neilforest7",
+        "category": "Productivity",
+        "capabilities": ["中文润色", "文稿审阅"],
+        "defaultPrompt": [
+          "请用讲人话润色下面的中文，保留事实、确定程度和我的语气。",
+          "请用讲人话审阅这篇文章，只给修改建议。",
+          "请用讲人话润色这个文件的正文，保留代码、链接、数据和标题结构。"
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "首次发布「讲人话」。完整打包 humanizer-zh 2026-09-23 修订版原文，添加中文插件说明与图标；免费开放。"
+      }
+    }
+  }
+}

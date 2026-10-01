@@ -1,0 +1,12 @@
+{
+  "name": "humanizer-zh-plugins",
+  "interface": { "displayName": "讲人话" },
+  "plugins": [
+    {
+      "name": "humanizer-zh",
+      "source": { "source": "local", "path": "./humanizer-zh" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
