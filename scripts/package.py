@@ -14,7 +14,7 @@ FILES = ("plugin.json", "LICENSE", "assets/icon.png", "skills/humanizer-zh/SKILL
 
 
 def main():
-    manifest = json.loads((PLUGIN / "plugin.json").read_text())
+    manifest = json.loads((PLUGIN / "plugin.json").read_text(encoding="utf-8"))
     assert manifest["name"] == PLUGIN.name
     interface = manifest["extensions"]["com.openai"]["interface"]
     assert interface["displayName"] == "讲人话"
